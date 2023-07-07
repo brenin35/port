@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch:sass": "node-sass src/scss/main.scss -o dist/css --output-style compressed --watch",
     "compile:sass": "node-sass src/scss/main.scss -o dist/css --output-style compressed"
   },
   "keywords": [],

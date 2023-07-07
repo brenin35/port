@@ -1,18 +1,3 @@
-:root {
-    --cor-fundo: #ffffff;
-    /* cor de fundo do modo claro */
-    --cor-texto: #000000;
-    /* cor do texto do modo claro */
-}
-
-body.dark-mode {
-    --cor-fundo: #000000;
-    /* cor de fundo do modo escuro */
-    --cor-texto: #ffffff;
-    /* cor do texto do modo escuro */
-}
-
-
 body {
     margin: 0;
     padding: 0;
