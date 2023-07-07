@@ -1,0 +1,107 @@
+/* switch settings 👇 */
+
+.switch {
+    /* switch */
+    --border-radius: 999px;
+    --switch-transition: .3s;
+    --switch-width: 46px;
+    --switch-height: 24px;
+    --switch-default-bg: #212121;
+    --switch-checked-bg: rgba(251, 251, 251, 1);
+    --switch-hover-default-bg: rgba(132, 132, 132, 0.396);
+    --swithc-hover-checked-bg: rgba(251, 251, 251, 1);
+    --switch-inset-width: calc((var(--switch-height) - var(--circle-diameter)) / 2);
+    --switch-click-shadow: 0 0 0 7px var(--switch-checked-bg);
+    --switch-click-shadow-transition: .6s ease;
+    /* circle */
+    --circle-diameter: 18px;
+    --circle-bg: #fff;
+    --circle-shadow: 0 0 6px 2px rgba(0, 35, 11, .2);
+    --circle-toggle-width: 24px;
+}
+
+.switch {
+    -webkit-transition: var(--switch-transition);
+    -o-transition: var(--switch-transition);
+    transition: var(--switch-transition);
+    min-width: var(--switch-width);
+    min-height: var(--switch-height);
+    background: var(--switch-default-bg);
+    border-radius: var(--border-radius);
+    -webkit-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
+    appearance: none;
+    position: relative;
+    outline: none;
+}
+
+.switch::before,
+.switch::after {
+    position: absolute;
+    content: "";
+}
+
+.switch::before {
+    -webkit-transition: var(--switch-transition);
+    -o-transition: var(--switch-transition);
+    -webkit-box-shadow: var(--circle-shadow);
+    transition: var(--switch-transition);
+    box-shadow: var(--circle-shadow);
+    width: var(--circle-diameter);
+    height: var(--circle-diameter);
+    background: var(--circle-bg);
+    top: var(--switch-inset-width);
+    left: var(--switch-inset-width);
+    border-radius: inherit;
+}
+
+.switch::after {
+    -webkit-box-shadow: var(--switch-click-shadow);
+    -webkit-transition: var(--switch-click-shadow-transition);
+    -o-transition: var(--switch-click-shadow-transition);
+    transition: var(--switch-click-shadow-transition);
+    box-shadow: var(--switch-click-shadow);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: inherit;
+}
+
+/* actions */
+
+.switch:hover {
+    background: var(--switch-hover-default-bg);
+}
+
+.switch:checked:hover {
+    background: var(--swithc-hover-checked-bg);
+}
+
+.switch:active::before {
+    width: var(--circle-toggle-width);
+}
+
+.switch:checked:active::before {
+    left: calc(100% - var(--circle-toggle-width) - var(--switch-inset-width));
+}
+
+.switch:checked::before {
+    left: calc(100% - var(--circle-diameter) - var(--switch-inset-width));
+}
+
+.switch:checked {
+    background: var(--switch-checked-bg);
+}
+
+.switch:active::after {
+    -webkit-transition: none;
+    -o-transition: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition: none;
+    opacity: 1;
+}

@@ -1,13 +1,71 @@
-:root {
-    --cor-fundo: #ffffff;
-    /* cor de fundo do modo claro */
-    --cor-texto: #000000;
-    /* cor do texto do modo claro */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$lightBG: #e8e8e8;
+$lightTEXT: #212121;
+
+$darkBG: #{$lightTEXT};
+$darkTEXT: #{$lightBG};
+
+html[data-theme="light"] {
+    --color-background: #{$lightBG};
+    --color-text: #{$lightTEXT};
 }
 
-body.dark-mode {
-    --cor-fundo: #000000;
-    /* cor de fundo do modo escuro */
-    --cor-texto: #ffffff;
-    /* cor do texto do modo escuro */
+html[data-theme="dark"] {
+    --color-background: #{$darkBG};
+    --color-text: #{$darkTEXT};
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+//---------------------------------------------------------------------------
+//GRID
+.container {
+    max-width: 1200px;
+    margin: autor;
+    padding: 0 15px;
+}
+
+.row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+}
+
+//grid mixins
+$grid-columns: 12;
+
+//loop
+@for $i from 1 through $grid-columns {
+    $width: percentage($i / $grid-columns);
+
+    .col-md-#{$i} {
+        flex-basis: $width;
+        max-width: $width;
+    }
+}
+
+@media (max-width: 768px) {
+    @for $i from 1 through $grid-columns {
+        .col-md-#{$i} {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+//---------------------------------------------------------------------------
