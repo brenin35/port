@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.links-nav {
+    display: flex;
+    list-style: none;
+}
+
+.menu,
+li {
+    gap: 30px;
+}
+
+.menu,
+li,
+a {
+    padding: 10px;
+}
