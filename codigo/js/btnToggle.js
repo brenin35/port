@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded",function(){
     const checkbox = document.querySelector("input[name=theme_switch]");
     const logoImage = document.querySelector(".logo-image");
 
-    checkbox.addEventListener("change", function () {
+    checkbox.addEventListener("change",function(){
         if (checkbox.checked) {
             document.documentElement.setAttribute("data-theme", "dark");
             logoImage.style.filter = "none";
