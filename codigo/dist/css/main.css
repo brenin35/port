@@ -25,12 +25,12 @@ body {
   text-align: justify;
 }
 
-.justificado-final {
-  text-align: end;
+.justificado-inicio {
+  text-align: start;
 }
 
 .conteudo-textos {
-  padding-right: 30px;
+  padding-left: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -56,7 +56,7 @@ h1 {
 }
 
 .margin-hr {
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .margin-hr-2 {
@@ -71,7 +71,7 @@ h1 {
 
 #background {
   position: relative;
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 100px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,7 +107,7 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .img-section-1 {
@@ -141,9 +141,104 @@ h1 {
 .background-color-white .reverse-color {
   color: var(--color-background);
 }
+.background-color-white .reverse-button {
+  background-color: transparent;
+  border-radius: 45px;
+  border: 1px solid var(--color-background);
+  display: inline-block;
+  cursor: pointer;
+  color: var(--color-background);
+  padding: 11px;
+  width: 100%;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+}
+.background-color-white .reverse-button:hover {
+  background-color: transparent;
+}
+.background-color-white .reverse-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.button-more {
+  padding-left: 30px;
+  margin-top: 10px;
+  text-align: start;
+}
+
+.dot {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.dot-1 {
+  background-image: url(/img/escritorio.png);
+  background-position: right;
+  background-position: bottom;
+  background-size: 150%;
+}
+.dot-2 {
+  background-image: url(/img/escritorio-5.png);
+  background-position: right;
+  background-position: bottom;
+  background-size: 150%;
+}
+.dot-3 {
+  background-image: url(/img/escritorio-2.jpg);
+  background-position: right;
+  background-position: bottom;
+  background-size: 150%;
+}
+.dot-4 {
+  background-image: url(/img/escritorio-3.png);
+  background-position: right;
+  background-position: bottom;
+  background-size: 200%;
+}
+.dot-5 {
+  background-image: url(/img/escritorio-4.jpg);
+  background-position: right;
+  background-position: bottom;
+  background-size: 180%;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.title-card-solution {
+  padding-top: 30px;
+}
+
+.card-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: var(--color-text);
+}
 
 .container {
   max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.container-2 {
+  max-width: 1600px;
   margin: auto;
   padding: 0 15px;
 }

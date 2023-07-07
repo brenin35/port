@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiuza Perdigão - Home Page</title>
     <!--Links-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
@@ -20,26 +23,34 @@
         <main>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 texts-main">
+                    <div class="col-md-6 texts-main" data-aos="fade-right" data-aos-duration="1500">
                         <h1 class="title-main">Bem-vindo a <strong>Fiuza Perdigão</strong> Engenharia e Tecnologia</h1>
-                        <p class="p-main">"Fazemos do seu projeto, uma experiência única!"</p>
+                        <p class="p-main" data-aos="fade-right">"Fazemos do seu projeto, uma experiência única!"</p>
                     </div>
                     <div class="col-md-6 align-item">
-                        <img src="img/Construction-inverted.png" alt="" class="img-main" width="500px">
+                        <img src="img/Construction-inverted.png" alt="" class="img-main" width="500px"
+                            data-aos="fade-left" data-aos-duration="1500">
                     </div>
                 </div>
             </div>
         </main>
     </div>
 
-    <section>
+    <section class="background-color-white">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-md-6">
+                    <div class="box">
+                        <img src="img/DJI_0123.JPG" alt="" width="600px" class="img-section-1">
+                    </div>
+                </div>
                 <div class="col-md-6 mt-5 mb-5">
-                    <h1 class="justificado-final conteudo-textos">Sobre Nós</h1>
-                    <h3 class="justificado-final conteudo-textos">Conheça um pouco mais sobre nossa história...</h3>
-                    <hr class="margin-hr">
-                    <p class="justificado conteudo-textos">A Fiúza Perdigão Engenharia foi fundada em 2013 pelos Sócios
+                    <h1 class="justificado-inicio conteudo-textos reverse-color">Sobre Nós</h1>
+                    <h3 class="justificado-inicio conteudo-textos reverse-color">Conheça um pouco mais sobre nossa
+                        história...</h3>
+                    <hr class="margin-hr reverse-color">
+                    <p class="justificado conteudo-textos reverse-color">A Fiúza Perdigão Engenharia foi fundada em 2013
+                        pelos Sócios
                         Fábio Fiúza e Emerson Perdigão.
                         Inicialmente o propósito da empresa era trabalhar no mercado de tecnologia com obras de
                         infraestrutura de TI.
@@ -50,32 +61,53 @@
                         tecnológico.
                         Hoje entregamos soluções de engenharia em formato turn key, desenvolvendo projetos com foco em
                         inovação e tecnologia para o mercado corporativo no setor privado.</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="box">
-                        <img src="img/DJI_0123.JPG" alt="" width="600px" class="img-section-1">
-                    </div>
+                        <div class="button-more">
+                            <button class="button-saiba-mais reverse-button">SAIBA MAIS</button>
+                        </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="background-color-white">
-        <div class="container">
+    <section>
+        <div class="container-2">
             <div class="row">
-                <div class="col-md-12 mt-5 mb-5">
-                    <h1 class="text-center reverse-color">Nossas Soluções</h1>
-                    <hr class="margin-hr-2 reverse-color">
-                    <h3 class="text-center reverse-color">Oferecemos um amplo portfólio de soluções para o mercado
-                        corporativo. O investimento em conhecimento técnico e inovação nos permite trazer conforto e
-                        tranquilidade para nossos clientes com as melhores soluções do mercado.
-                        Somos especializados em projetos de construção, reforma e instalações de ambientes corporativos
-                        e comerciais e oferecemos também a operação continuada, através de nossos contratos de
-                        manutenção e rental.</h3>
+                <div class="container">
+                    <div class="col-md-12 mt-5 mb-5" data-aos="fade-down" data-aos-duration="2000">
+                        <h1 class="text-center">Nossas Soluções</h1>
+                        <hr class="margin-hr-2">
+                        <h3 class="text-center">Oferecemos um amplo portfólio de soluções para o mercado
+                            corporativo. O investimento em conhecimento técnico e inovação nos permite trazer conforto e
+                            tranquilidade para nossos clientes com as melhores soluções do mercado.
+                            Somos especializados em projetos de construção, reforma e instalações de ambientes
+                            corporativos
+                            e comerciais e oferecemos também a operação continuada, através de nossos contratos de
+                            manutenção e rental.</h3>
+                    </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="card">
-
+                <div class="col-md-12 mb-5" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card-container">
+                        <div class="card">
+                            <a class="dot dot-1" href=""></a>
+                            <h3 class="text-center title-card-solution">Construção e Reforma de Ambientes Corporativos
+                            </h3>
+                        </div>
+                        <div class="card">
+                            <a class="dot dot-2" href=""></a>
+                            <h3 class="text-center title-card-solution">Instalações Prediais</h3>
+                        </div>
+                        <div class="card">
+                            <a class="dot dot-3" href=""></a>
+                            <h3 class="text-center title-card-solution">Instalações Especiais</h3>
+                        </div>
+                        <div class="card">
+                            <a class="dot dot-4" href=""></a>
+                            <h3 class="text-center title-card-solution">Manutenção Predial - Facilities</h3>
+                        </div>
+                        <div class="card">
+                            <a class="dot dot-5" href=""></a>
+                            <h3 class="text-center title-card-solution">Locação de Soluções - "Rental"</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,6 +117,9 @@
 
     <script src="js/navbar.js"></script>
     <script src="js/btnToggle.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

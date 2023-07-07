@@ -31,7 +31,7 @@ checkbox.addEventListener("change", function() {
         background.style.backgroundImage = "url(/img/DJI_0030.png)";
     } else {
         imgMain.src = "img/Construction-not-inverted.png";
-        background.style.backgroundImage = "url(/img/DJI_0030_branco.png)";
+        background.style.backgroundImage = "url(/img/DJI_0149.PNG)";
     }
 });
 
